@@ -1,0 +1,925 @@
+/*RESET CSS*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #333;
+  }
+  a {
+	text-decoration: none;
+  }
+  nav, ul, p, span, table, footer {
+	font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-feature-settings: "palt" 1;
+  }
+  h1 {
+	font-family: 'Londrina Shadow', 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  }
+  p {
+	line-height: 2rem;
+  }
+
+  /* header */
+  #header-class {
+	width: 100%;
+	height: 100vh;
+	background-image: url(header_img.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+  }
+  .header-content .headline{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom :0;
+	margin:  auto;
+  }
+  .header-content .headline{
+	font-size: 88px;
+  }
+  .header-content .head-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 24rem;
+	bottom :0;
+	margin:  auto;
+  }
+  .title_name{
+	color: #fff;
+  }
+  .head-content a{
+	font-size: 16px;
+	text-align: center;
+	background-color:rgba(132,130,130,0.9);
+	padding: 32px;
+	border-radius: 7.5px;
+  }
+  .head-content i,.head-content span{
+	color: #fff;
+  }
+  /* header */
+  /*nav*/
+  nav {
+	width: 100%;
+	height: 88px;
+	background: rgba(132,130,130,0.9);
+	padding: 0 8px;
+	position: fixed;
+	z-index: 1;
+	transition: all 0.5s;
+  }
+  nav .nav-list-item{
+	font-size: 20px;
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+  }
+  nav .nav-list-title{
+	width: 100%;
+	position: relative;
+	color: #fff;
+	border-bottom:solid 2.5px #fff;
+  }
+  nav .nav-social-icon-twitter,nav .nav-social-icon-facebook{
+	color: #fff;
+	transition:0.5s;
+  }
+  nav .nav-icon{
+	color: #fff;
+  }
+  nav .nav-list-title::after {
+	position: absolute;
+	margin: auto;
+	bottom: -3.75px;
+	left: 0;
+	display: flex;
+	content: "";
+	width: 100%;
+	height: 5px;
+	background: #fff;
+	transform: scaleX(0);
+	transform-origin: right top;
+	transition: transform 0.5s;
+  }
+  nav .nav-list-title:hover::after {
+	transform: scaleX(1);
+	transform-origin: left top;
+  }
+  .height {
+	height: 56px;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);/*影*/
+  }
+  .height .nav-list-item,.height .nav-social-icon-twitter,.height .nav-social-icon-facebook,.height .nav-list-title,.height .nav-icon{
+	color: #333;
+  }
+  .height .nav-list-title{
+	border-bottom:solid 2.5px #333;
+  }
+  .height .nav-list-title::after {
+	background: #333;
+  }
+  #nav-content{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	transition: all 0.5s;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+  }
+  .nav-social-list{
+	text-align: left;
+	margin-left: 0;
+  }
+  .nav-social-item {
+	font-size: 40px;
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+  }
+  .nav-social-icon-twitter:hover{
+	font-size: 56px;
+  }
+  .nav-social-icon-facebook:hover{
+	font-size: 56px;
+  }
+  .nav-list{
+	text-align: right;
+	margin: 0 auto;
+  }
+  /*nav*/
+  /*main common*/
+  main {
+	width: 100%;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+  }
+  /*main common*/
+
+  /*to_set_all_section*/
+  .container {
+	width: 80%;
+	margin: 0 auto;
+  }
+  .headline {
+	padding-top: 64px;
+	text-align: center;
+	margin-bottom: 56px;
+	font-size: 56px;
+  }
+  span {
+	margin-left: 12px;
+  }
+  /*to_set_all_section*/
+
+  /*profile*/
+  .profile {
+	display: block;
+	height: auto;
+	position: relative;
+  }
+  .profile-box {
+	padding: 20px 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+  }
+  .profile_photo {
+	width: 48%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .photo {
+	border-radius: 50%
+  }
+  .profile_text_box {
+	width: 48%;
+  }
+  .profile_text {
+	margin: auto;
+	vertical-align: middle;
+  }
+  /*profile*/
+  /*about_me*/
+  .about_me {
+	display: block;
+	height: auto;
+	position: relative;
+	background-image: url(back_ground.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+  }
+  .about_me-box {
+	width: 80%;
+	padding: 20px 0 4px; /*hoby_boxのmargin16pxを揃えた*/
+	margin: 0 auto;
+	display: block;
+  }
+  .about_me-odd_box,.about_me-even_box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  }
+  .hobby_odd,.hobby_even{
+	width: 48%;
+	height: auto;
+	margin-bottom: 16px;
+	text-align:left;
+  }
+  .flower{
+	background-image: url(flower.JPG);
+  }
+  .movie{
+	background-image: url(movie.jpg);
+  }
+  .vocal{
+	background-image: url(vocal.jpg);
+  }
+  .sauna{
+	background-image: url(sauna.jpg);
+  }
+  .flower,.movie,.vocal,.sauna {
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 48px;
+  }
+  .hobby_title{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 3px;
+	margin: 24px 0;
+	font-weight: bold;
+  }
+  .hobby_text{
+	margin-top: 0;
+	margin-bottom: 1rem;
+	margin: 0 32px;
+  }
+  .bkRGBA{
+	/* 背景画像の透過用css */
+	height: 100%;
+	background: rgba(255,255,255,0.8);
+	border-top: solid 10px #848282;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);/*影*/
+  }
+  /*about_me*/
+  /* SKLLS */
+  .skills {
+	display: block;
+	position: relative;
+	height: auto;
+  }
+  .skills-box {
+	width: 80%;
+	padding: 20px 0;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .card-last-row,.card{
+	flex-basis: 48%;
+	display: flex;
+	background-color: #fff;
+  }
+  .card{
+	margin-bottom: 48px;
+  }
+  .card:first-child {
+	flex-basis: 100%;
+  }
+  .skill-desc{
+	text-align: center;
+	width: 100%;
+	background-color: inherit;
+	border-top: solid 10px #848282;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);/*影*/
+  }
+  .skill-desc-title{
+	margin-bottom: 3px;
+	font-size: 26px;
+	padding: 24px;
+	font-weight: bold;
+  }
+  .skill-desc-text{
+	margin-top: 0;
+	margin-bottom: 1rem;
+  }
+  .skill-desc-table{
+	width: 100%;
+	margin-bottom: 1rem;
+  }
+  .skill-desc-table td, .skill-desc-table th{
+	padding: .75rem;
+	vertical-align: top;
+  }
+  /* SKLLS */
+  /* CONTACT */
+  .contact {
+	display: block;
+	height: auto;
+	position: relative;
+	background-image: url(back_ground.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+  }
+  .contact-box{
+	width: 80%;
+	padding: 20px 0 120px 0;
+	justify-content: center;
+	margin: 0 auto;
+  }
+  .contact-text{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+  }
+  .error{
+	width: 80%;
+	margin: 0 auto 40px auto;
+  }
+  .contact-forms {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  .contact-name-box,.contact-email-box{
+	justify-content: center;
+	width: 50%;
+	margin-bottom: 40px;
+  }
+  .contact-name-box{
+	padding-right: 24px;
+  }
+  .contact-email-box{
+	padding-left: 24px;
+  }
+  .contact-form-text-box{
+	justify-content: center;
+	margin-bottom: 40px;
+	flex-basis: 100%;
+  }
+  .contact-form{
+	position: relative;
+	border: none;
+	background-color: inherit;
+	color: #000;
+	font-size: 1.5rem;
+	border-bottom: 1.5px solid #848282;
+	width: 100%;
+	height: 3rem;
+	resize: none;
+	outline: 0;
+	transition: 0.3s;
+  }
+  .contact-form-content:focus{
+	height: 12rem;
+  }
+  .contact-form:focus{
+	border-bottom: 5px solid #848282;
+  }
+  .submit{
+	margin: 0 auto;
+  }
+  .btn-square{
+	margin: 0 auto;
+	padding: 21px 56px;
+	font-size: 1.8em;
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: #848282;
+	background: #ECECEC;
+	border-radius: 0 15px 15px 0;
+	transition: .5s;
+	font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-feature-settings: "palt" 1;
+  }
+  .btn-square:focus{
+	outline: 0;
+  }
+  .btn-square:hover {
+	background: #848282;
+	color: #ECECEC
+  }
+  /* CONTACT */
+  /*footer*/
+  footer {
+	text-align: center;
+	position: relative;
+	background-color: #848282;
+  }
+  .footer-icon-box{
+	display: block;
+	margin: 0 auto;
+	padding: 16px 16px;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	-webkit-transform : translateY(-50%);
+	transform : translateY(-50%);
+	background-color: #848282;
+	transition: 0.5s;
+	z-index: 3;
+  }
+  .footer-icon-box:hover{
+	-webkit-transform : translateY(-50%);
+	transform : translateY(-60%);
+  }
+  .footer-icon-box i {
+	font-size: 72px;
+	color: #333;
+  }
+  .footer-text {
+	display: block;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+  }
+  /*footer*/
+
+  /*レスポンシブ*/
+  @media screen and (min-width: 897px) and (max-width: 1024px) {/*タブレット縦*/
+	/*header*/
+	.head-content a{
+	  font-size: 24px;
+	  padding: 40px 64px;
+	}
+	.header-content .head-content{
+	  top: 32rem;
+	}
+	/*header*/
+	/*profile*/
+	.photo {
+	  border-radius: 50%;
+	  width: 300px;
+	  height: auto;
+	}
+	.profile_photo {
+	  width: 40%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	.profile_text_box {
+	  width: 55%;
+	}
+	/*profile*/
+  }
+  @media screen and (min-width: 481px) and (max-width: 570px) {/*スマホ横iPhoneSE*/
+	/*header*/
+	.header-content .headline{
+	  font-size: 48px;
+	  margin: 0 auto 128px;
+	}
+	.header-content .head-content{
+	  top: 16rem;
+	  margin: 0 auto 80px;
+	}
+	.head-content a{
+	  font-size: 16px;
+	  padding: 16px 32px;
+	}
+	/*header*/
+	/*nav*/
+	nav {
+	  width: 100%;
+	  height: 56px;
+	  padding: 0 8px;
+	  position: fixed;
+	  z-index: 1;
+	  transition: all 0.5s;
+	}
+	nav .nav-list-item{
+	  font-size: 16px;
+	  list-style: none;
+	  display: inline-block;
+	  margin: 0 8px;
+	}
+	.height {
+	  height: 40px;
+	}
+	.nav-list-title{
+	  display: none;
+	}
+	.nav-social-item {
+	  font-size: 32px;
+	  list-style: none;
+	  display: inline-block;
+	  margin: 0 8px;
+	}
+	/*nav*/
+	/*headline*/
+	.headline {
+	  text-align: center;
+	  margin-bottom: 0;
+	  font-size: 56px;
+	}
+	/*headline*/
+	/*profile*/
+	.profile {
+	  display: block;
+	  height: auto;
+	  position: relative;
+	}
+	.profile-box {
+	  padding: 20px 0;
+	  margin: 0 auto;
+	  display: block;
+	}
+	.profile_photo {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  margin-bottom: 20px;
+	}
+	.profile_text_box {
+	  width: 100%;
+	}
+	.photo {
+	  border-radius: 50%;
+	  width: 250px;
+	  height: auto;
+	}
+	/*profile*/
+	/*about me*/
+	.about_me-odd_box {
+	  width: 100%;
+	  display: block;
+	  justify-content: space-between;
+	}
+	.hobby_odd{
+	  width: 100%;
+	  height: auto;
+	  margin-bottom: 16px;
+	  text-align:left;
+	}
+	.about_me-even_box {
+	  width: 100%;
+	  display: block;
+	  justify-content: space-between;
+	}
+	.hobby_even{
+	  width: 100%;
+	  height: auto;
+	  margin-bottom: 16px;
+	  text-align:left;
+	}
+	.flower,.movie,.vocal,.sauna  {
+	  margin-bottom: 48px;
+	}
+	/*about me*/
+	/*skills*/
+	.skills {
+	  display: block;
+	  position: relative;
+	  height: auto;
+	}
+	.skills-box {
+	  margin: 0 auto;
+	  display: block;
+	}
+	.card{
+	  flex-basis: 48%;
+	  display: block;
+	  margin-bottom: 48px;
+	}
+	.card-last-row{
+	  flex-basis: 48%;
+	  display: block;
+	}
+	/*skills*/
+  }
+  @media screen and (min-width: 570px) and (max-width: 896px) {/*スマホ横*/
+	/*header*/
+	.header-content .headline{
+	  font-size: 48px;
+	  margin: 0 auto 128px;
+	}
+	.header-content .head-content{
+	  top: 16rem;
+	  margin: 0 auto 80px;
+	}
+	.head-content a{
+	  font-size: 16px;
+	  padding: 24px 40px;
+	}
+	/*header*/
+	/*nav*/
+	nav {
+	  width: 100%;
+	  height: 56px;
+	  padding: 0 8px;
+	  position: fixed;
+	  z-index: 1;
+	  transition: all 0.5s;
+	}
+	nav .nav-list-item{
+	  font-size: 16px;
+	  list-style: none;
+	  display: inline-block;
+	  margin: 0 8px;
+	}
+	nav .nav-icon{
+	  display: none
+	}
+	.height {
+	  height: 40px;
+	}
+	.nav-social-item {
+	  font-size: 32px;
+	  list-style: none;
+	  display: inline-block;
+	  margin: 0 8px;
+	}
+	/*nav*/
+	/*headline*/
+	.headline {
+	  text-align: center;
+	  margin-bottom: 0;
+	  font-size: 56px;
+	}
+	/*headline*/
+	/*profile*/
+	.profile {
+	  display: block;
+	  height: auto;
+	  position: relative;
+	}
+	.profile-box {
+	  padding: 20px 0;
+	  margin: 0 auto;
+	  display: block;
+	}
+	.profile_photo {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  margin-bottom: 20px;
+	}
+	.profile_text_box {
+	  width: 100%;
+	}
+	.photo {
+	  border-radius: 50%;
+	  width: 250px;
+	  height: auto;
+	}
+	/*profile*/
+	/*about me*/
+	.about_me-odd_box {
+	  width: 100%;
+	  display: block;
+	  justify-content: space-between;
+	}
+	.hobby_odd{
+	  width: 100%;
+	  height: auto;
+	  margin-bottom: 16px;
+	  text-align:left;
+	}
+	.about_me-even_box {
+	  width: 100%;
+	  display: block;
+	  justify-content: space-between;
+	}
+	.hobby_even{
+	  width: 100%;
+	  height: auto;
+	  margin-bottom: 16px;
+	  text-align:left;
+	}
+	.flower,.movie,.vocal,.sauna  {
+	  margin-bottom: 48px;
+	}
+	/*about me*/
+	/*skills*/
+	.skills {
+	  display: block;
+	  position: relative;
+	  height: auto;
+	}
+	.skills-box {
+	  margin: 0 auto;
+	  display: block;
+	}
+	.card{
+	  flex-basis: 48%;
+	  display: block;
+	  margin-bottom: 48px;
+	}
+	.card-last-row{
+	  flex-basis: 48%;
+	  display: block;
+	}
+	/*skills*/
+  }
+  @media screen and (max-width: 480px) {/*スマホ縦*/
+	/*header*/
+	.header-content .headline{
+	  font-size: 32px;
+	}
+	.head-content a{
+	  font-size: 16px;
+	  padding: 24px 48px;
+	}
+	/*header*/
+	.container {
+	  width: 100%;
+	}
+	/*nav*/
+	#nav-content{
+	  width: 100%;
+	  margin: auto;
+	  padding: 0 24px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  transition: all 0.5s;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform : translate(-50%,-50%);
+	  transform : translate(-50%,-50%);
+	}
+	nav .nav-list-item{
+	  font-size: 20px;
+	  list-style: none;
+	  display: inline-block;
+	  margin: 0 8px;
+	}
+	.nav-list-title{
+	  display: none;
+	}
+	.nav-social-item {
+	  font-size: 32px;
+	  list-style: none;
+	  display: inline-block;
+	  margin: 0 8px;
+	}
+	/*nav*/
+	.headline {
+	  text-align: center;
+	  margin-bottom: 0;
+	  font-size: 56px;
+	}
+	/*profile*/
+	.profile {
+	  display: block;
+	  height: auto;
+	  position: relative;
+	}
+	.profile-box {
+	  padding: 20px 0;
+	  margin: 0 auto;
+	  display: block;
+	}
+	.profile_photo {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	.profile_photo{
+	  margin-bottom: 20px;
+	}
+	.photo {
+	  width: 80%;
+	  height: auto;
+	  border-radius: 50%
+	}
+	.profile_text_box {
+	  width: 100%;
+	}
+	/*profile*/
+	/*about_me*/
+	.about_me {
+	  display: block;
+	  height: auto;
+	  position: relative;
+	}
+	.about_me-box {
+	  width: 88%;
+	  padding: 20px 0 4px; /*hoby_boxのmargin16pxを揃えた*/
+	  margin: 0 auto;
+	  display: block;
+	  justify-content: center;
+	  align-items: center;
+	}
+	.about_me-odd_box {
+	  width: 100%;
+	  margin-right: 0;
+	  display: block;
+	}
+	.hobby_odd{
+	  width: 100%;
+	  height: inherit;
+	  margin-bottom: 0;
+	  text-align:center;
+	  display: block;
+	}
+	.about_me-even_box {
+	  width: 100%;
+	  margin-left: 0;
+	  display: block;
+	}
+	.hobby_even{
+	  width: 100%;
+	  height: inherit;
+	  margin-bottom: 0;
+	  text-align:center;
+	  display: block;
+	}
+	.flower,.movie,.vocal,.sauna  {
+	  margin-bottom: 48px;
+	}
+	/*about_me*/
+	/*skills*/
+	.skills {
+	  display: block;
+	  height: auto;
+	  position: relative;
+	}
+	.skills-box {
+	  width: 88%;
+	  padding: 20px 0;
+	  margin: 0 auto;
+	  display: block;
+	  justify-content: center;
+	  align-items: center;
+	  justify-content: space-between;
+	}
+	.card{
+	  flex-basis: 100%;
+	  display: flex;
+	  margin-bottom: 48px;
+	}
+	.card-last-row{
+	  flex-basis: 100%;
+	  display: flex;
+	  margin-bottom: 48px;
+	}
+	/*skills*/
+	/*contact*/
+	.contact {
+	  display: block;
+	  height: auto;
+	  position: relative;
+	}
+	.contact-forms {
+	  width: 88%;
+	  justify-content: center;
+	  align-items: center;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	}
+	.contact-name-box{
+	  justify-content: center;
+	  width: 72%;
+	  margin-bottom: 40px;
+	  padding-right: 0;
+	}
+	.contact-email-box{
+	  justify-content: center;
+	  width: 72%;
+	  padding-left: 0;
+	  margin-bottom: 40px;
+	}
+	/*contact*/
+  }
