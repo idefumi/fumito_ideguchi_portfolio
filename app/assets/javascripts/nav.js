@@ -6,7 +6,7 @@ $(function() {
 		$boxheight = 'height';
 		$win.on('load scroll', function() {
 			var value = $(this).scrollTop();
-			height = $header.height();
+			height = $header.height()/2;
 		  	if ( value >= height ) {
 				$nav.addClass($boxheight);
 	  		} else {

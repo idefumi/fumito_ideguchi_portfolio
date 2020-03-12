@@ -267,8 +267,8 @@
   .flower{
 	background-image: url(flower.JPG);
   }
-  .movie{
-	background-image: url(movie.jpg);
+  .sake{
+	background-image: url(sake.jpg);
   }
   .vocal{
 	background-image: url(vocal.jpg);
@@ -276,7 +276,7 @@
   .sauna{
 	background-image: url(sauna.jpg);
   }
-  .flower,.movie,.vocal,.sauna {
+  .flower,.sake,.vocal,.sauna {
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 48px;
@@ -612,7 +612,7 @@
 	  margin-bottom: 16px;
 	  text-align:left;
 	}
-	.flower,.movie,.vocal,.sauna  {
+	.flower,.sake,.vocal,.sauna  {
 	  margin-bottom: 48px;
 	}
 	/*about me*/
@@ -737,7 +737,7 @@
 	  margin-bottom: 16px;
 	  text-align:left;
 	}
-	.flower,.movie,.vocal,.sauna  {
+	.flower,.sake,.vocal,.sauna  {
 	  margin-bottom: 48px;
 	}
 	/*about me*/
@@ -839,7 +839,8 @@
 	  border-radius: 50%
 	}
 	.profile_text_box {
-	  width: 100%;
+	  width: 88%;
+	  margin : 0 auto;
 	}
 	/*profile*/
 	/*about_me*/
@@ -880,7 +881,7 @@
 	  text-align:center;
 	  display: block;
 	}
-	.flower,.movie,.vocal,.sauna  {
+	.flower,.sake,.vocal,.sauna  {
 	  margin-bottom: 48px;
 	}
 	/*about_me*/
