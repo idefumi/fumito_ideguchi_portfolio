@@ -18,24 +18,37 @@
   p {
 	line-height: 2rem;
   }
-html {
-	background:url('header_img.jpg') repeat-x;
-	background-size:100%;
-}
 
   /* header */
-  img {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-  }
   #header-class {
 	width: 100%;
 	height: 100vh;
-	background-image: url(header_img.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
+  }
+  .header-img:before{
+	content:"";
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+	width:100%;
+	height:100vh;
+	background:url(header_img.jpg) center no-repeat;
+	background-size:cover;
+	transition: all 1s;
+  }
+  .header-img-change:before{
+	content:"";
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+	width:100%;
+	height:100vh;
+	background:url(back_ground.jpg) center no-repeat;
+	background-size:cover;
+	transition: all 1s;
   }
   .header-content .headline{
 	display: flex;
@@ -233,10 +246,6 @@ html {
 	display: block;
 	height: auto;
 	position: relative;
-	background-image: url(back_ground.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
   }
   .about_me-box {
 	width: 80%;
@@ -350,10 +359,6 @@ html {
 	display: block;
 	height: auto;
 	position: relative;
-	background-image: url(back_ground.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
   }
   .contact-box{
 	width: 80%;
