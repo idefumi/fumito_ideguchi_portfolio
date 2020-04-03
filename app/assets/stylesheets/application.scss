@@ -22,69 +22,27 @@
   /* header */
   #header-class {
 	width: 100%;
-	height: 100vh;
+	height: 480px;
+	position: relative;
   }
-  .header-img:before{
-	content:"";
-	display:block;
-	position:fixed;
-	top:0;
-	left:0;
-	z-index:-1;
+  .header-img{
 	width:100%;
-	height:100vh;
+	height: inherit;
 	background:url(header_img.jpg) center no-repeat;
 	background-size:cover;
-	transition: all 0.5s;
-  }
-  .header-img-change:before{
-	content:"";
-	display:block;
-	position:fixed;
-	top:0;
-	left:0;
-	z-index:-1;
-	width:100%;
-	height:100vh;
-	background:url(back_ground.jpg) center no-repeat;
-	background-size:cover;
-	transition: all 0.5s;
   }
   .header-content .headline{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 100%;
 	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom :0;
-	margin:  auto;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
   }
   .header-content .headline{
 	font-size: 88px;
   }
-  .header-content .head-content{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 24rem;
-	bottom :0;
-	margin:  auto;
-  }
   .title_name{
 	color: #fff;
-  }
-  .head-content a{
-	font-size: 16px;
-	text-align: center;
-	background-color:rgba(132,130,130,0.9);
-	padding: 32px;
-	border-radius: 7.5px;
   }
   .head-content i,.head-content span{
 	color: #fff;
@@ -94,7 +52,7 @@
   nav {
 	width: 100%;
 	height: 64px;
-	background: rgba(132,130,130,1);
+	background: #333;
 	padding: 0 8px;
 	position: fixed;
 	z-index: 1;
@@ -138,11 +96,11 @@
 	transform-origin: left top;
   }
   .height {
-	height: 56px;
-	background-color: rgba(255,255,255,0.8);
+	height: 64px;
+	background-color: rgba(255,255,255,1);
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);/*影*/
   }
-  .height .nav-list-item,.height .nav-social-icon-twitter,.height .nav-social-icon-facebook,.height .nav-list-title,.height .nav-icon{
+  .height .nav-list-item,.height .nav-list-title,.height .nav-icon{
 	color: #333;
   }
   .height .nav-list-title{
@@ -176,11 +134,11 @@
 	display: inline-block;
 	margin: 0 20px;
   }
-  .nav-social-icon-twitter:hover{
-	font-size: 56px;
+  .nav-social-icon-twitter {
+	  color: #1DA1F2 !important;
   }
-  .nav-social-icon-facebook:hover{
-	font-size: 56px;
+  .nav-social-icon-facebook {
+	  color: #3C5A99 !important;
   }
   .nav-list{
 	text-align: right;
@@ -193,6 +151,10 @@
 	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
+  }
+  .main-img {
+	background:url(back_ground.jpg);
+	background-size: contain;
   }
   /*main common*/
 
@@ -522,6 +484,9 @@
   }
   @media screen and (min-width: 481px) and (max-width: 570px) {/*スマホ横iPhoneSE*/
 	/*header*/
+	#header-class{
+		height: 200px;
+	}
 	.header-content .headline{
 	  font-size: 48px;
 	  margin: 0 auto 128px;
@@ -647,6 +612,9 @@
   }
   @media screen and (min-width: 570px) and (max-width: 896px) {/*スマホ横*/
 	/*header*/
+	#header-class{
+		height: 200px;
+	}
 	.header-content .headline{
 	  font-size: 48px;
 	  margin: 0 auto 128px;
@@ -772,6 +740,9 @@
   }
   @media screen and (max-width: 480px) {/*スマホ縦*/
 	/*header*/
+	#header-class{
+		height: 200px;
+	}
 	.header-content .headline{
 	  font-size: 32px;
 	}
