@@ -22,7 +22,7 @@
   /* header */
   #header-class {
 	width: 100%;
-	height: 480px;
+	height: 544px;
 	position: relative;
   }
   .header-img{
@@ -193,7 +193,7 @@
 	align-items: center;
   }
   .photo {
-	border-radius: 50%
+	border-radius: 3%;
   }
   .profile_text_box {
 	width: 48%;
@@ -467,7 +467,6 @@
 	/*header*/
 	/*profile*/
 	.photo {
-	  border-radius: 50%;
 	  width: 300px;
 	  height: auto;
 	}
@@ -485,7 +484,7 @@
   @media screen and (min-width: 481px) and (max-width: 570px) {/*スマホ横iPhoneSE*/
 	/*header*/
 	#header-class{
-		height: 200px;
+		height: 256px;
 	}
 	.header-content .headline{
 	  font-size: 48px;
@@ -557,7 +556,6 @@
 	  width: 100%;
 	}
 	.photo {
-	  border-radius: 50%;
 	  width: 250px;
 	  height: auto;
 	}
@@ -613,7 +611,7 @@
   @media screen and (min-width: 570px) and (max-width: 896px) {/*スマホ横*/
 	/*header*/
 	#header-class{
-		height: 200px;
+		height: 256px;
 	}
 	.header-content .headline{
 	  font-size: 48px;
@@ -660,7 +658,7 @@
 	.headline {
 	  text-align: center;
 	  margin-bottom: 0;
-	  font-size: 56px;
+	  font-size: 32px;
 	}
 	/*headline*/
 	/*profile*/
@@ -685,7 +683,6 @@
 	  width: 100%;
 	}
 	.photo {
-	  border-radius: 50%;
 	  width: 250px;
 	  height: auto;
 	}
@@ -741,10 +738,10 @@
   @media screen and (max-width: 480px) {/*スマホ縦*/
 	/*header*/
 	#header-class{
-		height: 200px;
+		height: 256px;
 	}
 	.header-content .headline{
-	  font-size: 32px;
+	  font-size: 40px;
 	}
 	.head-content a{
 	  font-size: 16px;
@@ -790,7 +787,7 @@
 	.headline {
 	  text-align: center;
 	  margin-bottom: 0;
-	  font-size: 56px;
+	  font-size: 32px;
 	}
 	/*profile*/
 	.profile {
@@ -815,7 +812,6 @@
 	.photo {
 	  width: 80%;
 	  height: auto;
-	  border-radius: 50%
 	}
 	.profile_text_box {
 	  width: 88%;
