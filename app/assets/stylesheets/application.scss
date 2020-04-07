@@ -22,8 +22,9 @@
   /* header */
   #header-class {
 	width: 100%;
-	height: 544px;
+	height: 640px;
 	position: relative;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
   }
   .header-img{
 	width:100%;
@@ -42,7 +43,7 @@
 	font-size: 88px;
   }
   .title_name{
-	color: #fff;
+	color: #333;
   }
   .head-content i,.head-content span{
 	color: #fff;
@@ -52,7 +53,7 @@
   nav {
 	width: 100%;
 	height: 64px;
-	background: #333;
+	background: rgba(0, 0, 0, 0);;
 	padding: 0 8px;
 	position: fixed;
 	z-index: 1;
@@ -66,34 +67,7 @@
   }
   nav .nav-list-title{
 	width: 100%;
-	position: relative;
-	color: #fff;
-	border-bottom:solid 2.5px #fff;
-  }
-  nav .nav-social-icon-twitter,nav .nav-social-icon-facebook{
-	color: #fff;
-	transition:0.5s;
-  }
-  nav .nav-icon{
-	color: #fff;
-  }
-  nav .nav-list-title::after {
-	position: absolute;
-	margin: auto;
-	bottom: -3.75px;
-	left: 0;
-	display: flex;
-	content: "";
-	width: 100%;
-	height: 5px;
-	background: #fff;
-	transform: scaleX(0);
-	transform-origin: right top;
-	transition: transform 0.5s;
-  }
-  nav .nav-list-title:hover::after {
-	transform: scaleX(1);
-	transform-origin: left top;
+	color: #333;
   }
   .height {
 	height: 64px;
@@ -102,9 +76,6 @@
   }
   .height .nav-list-item,.height .nav-list-title,.height .nav-icon{
 	color: #333;
-  }
-  .height .nav-list-title{
-	border-bottom:solid 2.5px #333;
   }
   .height .nav-list-title::after {
 	background: #333;
@@ -193,7 +164,7 @@
 	align-items: center;
   }
   .photo {
-	border-radius: 3%;
+	border-radius: 1%;
   }
   .profile_text_box {
 	width: 48%;
@@ -420,7 +391,7 @@
   footer {
 	text-align: center;
 	position: relative;
-	background-color: #848282;
+	background-color: #333;
   }
   .footer-icon-box{
 	display: block;
@@ -431,7 +402,7 @@
 	border-radius: 50%;
 	-webkit-transform : translateY(-50%);
 	transform : translateY(-50%);
-	background-color: #848282;
+	background-color:#333;
 	transition: 0.5s;
 	z-index: 3;
   }
@@ -441,7 +412,7 @@
   }
   .footer-icon-box i {
 	font-size: 72px;
-	color: #333;
+	color: #848282;
   }
   .footer-text {
 	display: block;
@@ -484,7 +455,7 @@
   @media screen and (min-width: 481px) and (max-width: 570px) {/*スマホ横iPhoneSE*/
 	/*header*/
 	#header-class{
-		height: 256px;
+		height: 600px;
 	}
 	.header-content .headline{
 	  font-size: 48px;
@@ -611,7 +582,7 @@
   @media screen and (min-width: 570px) and (max-width: 896px) {/*スマホ横*/
 	/*header*/
 	#header-class{
-		height: 256px;
+		height: 600px;
 	}
 	.header-content .headline{
 	  font-size: 48px;
@@ -738,7 +709,7 @@
   @media screen and (max-width: 480px) {/*スマホ縦*/
 	/*header*/
 	#header-class{
-		height: 256px;
+		height: 600px;
 	}
 	.header-content .headline{
 	  font-size: 40px;
