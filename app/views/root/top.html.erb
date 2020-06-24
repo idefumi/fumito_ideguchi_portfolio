@@ -8,7 +8,7 @@
         <a href="https://www.facebook.com/profile.php?id=100028198952133"><i class="fab fa-facebook-square nav-social-icon-facebook"></i></a>
       </div>
     </div>
-    <div class="section-nav">
+    <%# <div class="section-nav">
       <ul id="nav-list">
         <li class="nav-list-item">
           <a href="#profile"><i class="fas fa-id-card-alt nav-icon"></i><span class="nav-list-title">PROFILE</span></a>
@@ -23,13 +23,35 @@
           <a href="#contact"><i class="fas fa-handshake nav-icon"></i><span class="nav-list-title">CONTACT</span></a>
         </li>
       </ul>
-    </div>
+    </div> %>
+    <button type="button" class="btn btn-primary" style="background-color: #333333;" data-toggle="modal" data-target="#exampleModal3">
+      Menu
+    </button>
   </div>
 </nav>
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #333333; color: #FFF;">
+        <h2 class="modal-title" id="exampleModal3Label" style="margin:0 auto;">Menu</h2>
+      </div>
+      <div class="modal-body">
+          <a href="#profile"><h3 class="headline"><i class="fas fa-id-card-alt"></i><span>PROFILE</span></h3></a>
+          <a href="#works"><h3 class="headline"style="margin-top: 0;"><i class="fas fa-laptop-code"></i><span>WORKS</span></h3></a>
+          <a href="#skills"><h3 class="headline"style="margin-top: 0;"><i class="fas fa-check"></i><span>SKILLS</span></h3></a>
+          <a href="#about_me"><h3 class="headline"style="margin-top: 0;"><i class="fas fa-smile"></i><span>HOBBY</span></h3></a>
+          <a href="#contact"><h3 class="headline"style="margin-top: 0; margin-bottom: 64px;"><i class="fas fa-handshake"></i><span>CONTACT</span></h3></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <header id="header-class" class="header-img">
   <div class="header-content">
      <h1 class="headline">
-       <a href="#" class="title_name">Fumito Ideguchi's Portfolio</a>
+       <a href="#profile" class="title_name">Fumito Ideguchi's Portfolio</a>
      </h1>
    </div>
  </header>
@@ -40,63 +62,47 @@
         <div class="profile-box">
           <div class='profile_photo'>
             <%= image_tag 'img_profile.jpg',class:'photo',:size => '336x336'%>
-            <a href="https://megurin-cafe.com/"></a>
           </div>
             <div class="profile_text_box">
              <p class="profile_text">
                初めましての方も、いつもお世話になっている方もこんにちは。
                <br>出口 史門（イデグチ フミト）です。
-               <br>デザインとか全くわからないんですが、RailsとHerokuでポートフォリオを作りました。
-               <br>Herokuだから表示速度がかなり遅い...。
                <br>僕のプロフィールを簡潔に。
                <br>1999年12月20日生まれで現在20歳。
                <br>山口県の田舎で生まれ、4歳から7歳までアメリカのスタンフォードで過ごす。
                <br>小学校から高校まで再び山口県で過ごし、青山学院大学への進学を機に上京。
                <br>大学1年時にライターとしてオウンドメディアに入社。
                <br>SEOを2年学び、その後はプロダクトマネージャーとして開発要件の定義やデータ分析、エンジニアの工数管理を行った。
-               <br>現在はフランス発のエンジニア養成機関「42Tokyo」に合格したので、そこでエンジニアリングを学んだり、
-               <br>アドネとアフィの勉強がてら、「めぐりん」というカフェメディアを運営している。
+               <br>現在はフランス発のエンジニア養成機関「42Tokyo」で学習中...。
                <br><i class="far fa-hand-point-right"></i><a href="https://note.com/fumito_07/n/nf07c50689044"><span class="linkto">42Tokyo、piscineの体験記</span></a>
-               <br><i class="far fa-hand-point-right"></i><a href="https://megurin-cafe.com"><span class="linkto">「めぐりん」はこちら</span></a>
               </p>
             </div>
         </div>
       </div>
    </section>
-   <section class="about_me">
-     <div class="container">
-      <h2 class="headline" id="about_me"><i class="fas fa-smile"></i><span>HOBBY</span></h2>
-        <div class="about_me-box">
-          <div class="about_me-odd_box">
-            <div class="hobby_odd flower">
-              <div class= 'bkRGBA'>
-                <h3 class="hobby_title"><i class="fab fa-pagelines"></i><span>IKEBANA</span></h3>
-                <p align="justify" class="hobby_text">当時から生け花の教室に通っていた母の影響もあり、中学から高校までやっていました。流派は流星派というものです。この流派は生け花というか、植物を用いた芸術作品を作ることに近い。自ら作品を出展することも多々あり、自分の作品を不特定多数に見られるという経験が、意外と自分の価値観に大きな影響を与えています。</p>
-              </div>
-            </div>
-            <div class="hobby_odd sake">
-              <div class= 'bkRGBA'>
-                <h3 class="hobby_title"><i class="fas fa-wine-glass-alt"></i><span>ALCOHOL</span></h3>
-                <p align="justify" class="hobby_text">お酒は好きです。でも弱いです。飲みに誘って頂ければ基本応じますが、戦えません。ビールは「キリン一番搾り」が1番好きです。ストカンはぬるいレモンが好きです。</p>
-              </div>
-            </div>
-          </div>
-          <div class="about_me-even_box">
-            <div class="hobby_even sauna">
-              <div class= 'bkRGBA'>
-                <h3 class="hobby_title"><i class="fas fa-hot-tub"></i><span>SAUNA</span></h3>
-                <p align="justify" class="hobby_text">友人のエンジニアとデザイナーに仕込まれました。いろいろ行きましたが、最近できた池袋の「かるまる」マジでやばくないですか？水風呂のあの温度、本気で心臓止めにきてますよね。基本整うのは屋外です。アスティルを省いて。</p>
-              </div>
-            </div>
-            <div class="hobby_even vocal">
-              <div class= 'bkRGBA'>
-                <h3 class="hobby_title"><i class="fas fa-microphone-alt"></i><span>VOCAL</span></h3>
-                <p align="justify" class="hobby_text">勉強も特にせず暇を持ち余した高校時代に、かっこいいものに憧れて歌を極めることにしました。ボイトレにも通いながらメキメキ成長していき、その後友人にHEY-SMITHを勧められてからバンドを組み、地元のライブハウスをよく4人で巡っていました。今でもカラオケではかなりマウントを取れるのでやっててよかったです。</p>
-              </div>
-            </div>
-          </div>
+   <section class="works">
+    <div class="container">
+      <h2 class="headline" id="works"><i class="fas fa-laptop-code"></i><span>WORKS</span></h2>
+      <div class="works-contain">
+        <h3 class="works-title orenosauna">俺のサウナ | サウナ活動記録アプリ</h3>
+        <div style="width: 100%; height: 100%;">
+          <%= image_tag 'orenosauna.jpg', style: 'display: block; width: 100%; height: 200px; object-fit: cover; border-radius: 10px;'%>
         </div>
+        <a href="https://github.com/idefumi/oreno_sauna" style="display: block; margin-top: 8px;"><i class="fab fa-github"></i><span>GitHubはこちら</span></a>
+        <a href="https://oreno-sauna.herokuapp.com/" style="display: block; "><i class="fas fa-hot-tub"></i><span>Demoはこちら</span></a>
+        <p style="text-align: center;">個人開発のサウナ活動記録アプリ。<br>個人で要件定義やデザイン、実装を行いました。</p>
       </div>
+      <div class="works-contain" style="margin-top: 48px;">
+        <h3 class="works-title">めぐりん | 東京のカフェまとめサイト</h3>
+        <div style="width: 100%; height: 100%;">
+          <%= image_tag 'megrin.jpg', style: 'display: block; width: 100%; height: 200px; object-fit: cover; border-radius: 10px;'%>
+        </div>
+        <a href="https://megurin-cafe.com/" style="display: block; margin-top: 8px;"><i class="fas fa-coffee"></i><span>Demoはこちら</span></a>
+        <p style="text-align: center;">彼女と2人で運営しているカフェメディア。<br>主に環境構築を行いました。記事も書きますが、<br>ほとんど彼女が書いています。</p>
+      </div>
+      <p style="text-align: center;margin-top: 32px;">GitHubに日々の自分の活動を記録しているので、是非以下からご確認ください。</p>
+      <a href="https://github.com/idefumi" style="margin: 0 auto; display:block; width: 56px; font-size:48px"><i class="fab fa-github"></i></a>
+    </div>
    </section>
    <section class = 'skills'>
      <div class="container">
@@ -176,8 +182,8 @@
         </div>
        <div class='card'>
          <div class='skill-desc'>
-           <h3 class="skill-desc-title"><i class="fas fa-desktop"></i><span>プログラミングスキル</span></h3>
-           <p class="skill-desc-text">使用経験のあるもの。</p>
+           <h3 class="skill-desc-title"><i class="fas fa-desktop"></i><span>Web</span></h3>
+           <p class="skill-desc-text">Web開発におけるスキルセットです。</p>
            <table class="skill-desc-table">
              <tr>
               <th>技術</th>
@@ -194,7 +200,7 @@
               </td>
             </tr>
             <tr>
-              <td>JavaScript</td>
+              <td>JavaScript（jQuery）</td>
               <td>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -204,21 +210,31 @@
               </td>
             </tr>
             <tr>
-              <td>Ruby / Rails</td>
+              <td>Ruby on Rails</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>SQL（PostgreSQL, SQLite）</td>
+              <td>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>Git</td>
               <td>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>SQLite</td>
-              <td>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
                 <i class="far fa-star"></i>
               </td>
@@ -228,25 +244,15 @@
        </div>
        <div class='card'>
          <div class='skill-desc'>
-           <h3 class="skill-desc-title"><i class="fas fa-desktop"></i><span>勉強中...。</span></h3>
-           <p class="skill-desc-text">主に42Tokyoで学習中。</p>
+           <h3 class="skill-desc-title"><i class="fas fa-desktop"></i><span>その他</span></h3>
+           <p class="skill-desc-text">ここでは自分の触ったことある言語・ツールなどをまとめています。</p>
            <table class="skill-desc-table">
              <tr>
               <th>技術</th>
               <th>スキル</th>
             </tr>
             <tr>
-              <td>C</td>
-              <td>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Python / Djungo</td>
+              <td>Pyhton</td>
               <td>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -256,21 +262,11 @@
               </td>
             </tr>
             <tr>
-              <td>Shell script(zsh)</td>
+              <td>C言語</td>
               <td>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>git</td>
-              <td>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
                 <i class="far fa-star"></i>
                 <i class="far fa-star"></i>
               </td>
@@ -279,6 +275,41 @@
          </div>
        </div>
       </div>
+      </div>
+   </section>
+   <section class="about_me">
+     <div class="container">
+      <h2 class="headline" id="about_me"><i class="fas fa-smile"></i><span>HOBBY</span></h2>
+        <div class="about_me-box">
+          <div class="about_me-odd_box">
+            <div class="hobby_odd flower">
+              <div class= 'bkRGBA'>
+                <h3 class="hobby_title"><i class="fab fa-pagelines"></i><span>IKEBANA</span></h3>
+                <p align="justify" class="hobby_text">当時から生け花の教室に通っていた母の影響もあり、中学から高校までやっていました。流派は流星派というものです。この流派は生け花というか、植物を用いた芸術作品を作ることに近い。自ら作品を出展することも多々あり、自分の作品を不特定多数に見られるという経験が、意外と自分の価値観に大きな影響を与えています。</p>
+              </div>
+            </div>
+            <div class="hobby_odd sake">
+              <div class= 'bkRGBA'>
+                <h3 class="hobby_title"><i class="fas fa-wine-glass-alt"></i><span>ALCOHOL</span></h3>
+                <p align="justify" class="hobby_text">お酒は好きです。でも弱いです。飲みに誘って頂ければ基本応じますが、戦えません。ビールは「キリン一番搾り」が1番好きです。ストカンはぬるいレモンが好きです。</p>
+              </div>
+            </div>
+          </div>
+          <div class="about_me-even_box">
+            <div class="hobby_even sauna">
+              <div class= 'bkRGBA'>
+                <h3 class="hobby_title"><i class="fas fa-hot-tub"></i><span>SAUNA</span></h3>
+                <p align="justify" class="hobby_text">友人のエンジニアとデザイナーに仕込まれました。いろいろ行きましたが、最近できた池袋の「かるまる」マジでやばくないですか？水風呂のあの温度、本気で心臓止めにきてますよね。基本整うのは屋外です。アスティルを省いて。</p>
+              </div>
+            </div>
+            <div class="hobby_even vocal">
+              <div class= 'bkRGBA'>
+                <h3 class="hobby_title"><i class="fas fa-microphone-alt"></i><span>VOCAL</span></h3>
+                <p align="justify" class="hobby_text">勉強も特にせず暇を持ち余した高校時代に、かっこいいものに憧れて歌を極めることにしました。ボイトレにも通いながらメキメキ成長していき、その後友人にHEY-SMITHを勧められてからバンドを組み、地元のライブハウスをよく4人で巡っていました。今でもカラオケではかなりマウントを取れるのでやっててよかったです。</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
    </section>
    <section class="contact" id="contact">

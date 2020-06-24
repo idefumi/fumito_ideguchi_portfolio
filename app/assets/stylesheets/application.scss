@@ -1,3 +1,4 @@
+@import "bootstrap";
 /*RESET CSS*/
 * {
 	margin: 0;
@@ -7,6 +8,15 @@
   }
   a {
 	text-decoration: none;
+  }
+  *:focus {
+	outline: none !important;
+  }
+  *:hover {
+	outline: none !important;
+  }
+  *:active {
+	outline: none !important;
   }
   nav, ul, p, span, table, footer {
 	font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
@@ -59,26 +69,10 @@
 	z-index: 1;
 	transition: all 0.5s;
   }
-  nav .nav-list-item{
-	font-size: 20px;
-	list-style: none;
-	display: inline-block;
-	margin: 0 20px;
-  }
-  nav .nav-list-title{
-	width: 100%;
-	color: #333;
-  }
   .height {
 	height: 64px;
 	background-color: rgba(255,255,255,1);
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);/*影*/
-  }
-  .height .nav-list-item,.height .nav-list-title,.height .nav-icon{
-	color: #333;
-  }
-  .height .nav-list-title::after {
-	background: #333;
   }
   #nav-content{
 	width: 80%;
@@ -110,10 +104,6 @@
   }
   .nav-social-icon-facebook {
 	  color: #3C5A99 !important;
-  }
-  .nav-list{
-	text-align: right;
-	margin: 0 auto;
   }
   /*nav*/
   /*main common*/
@@ -240,6 +230,16 @@
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);/*影*/
   }
   /*about_me*/
+  /* works */
+  .works-contain {
+	width: 50%;
+	margin: 0 auto;
+  }
+  .works-title {
+	text-align: center;
+	margin-bottom: 8px;
+  }
+  /* works */
   /* SKLLS */
   .skills {
 	display: block;
@@ -479,17 +479,8 @@
 	  z-index: 1;
 	  transition: all 0.5s;
 	}
-	nav .nav-list-item{
-	  font-size: 16px;
-	  list-style: none;
-	  display: inline-block;
-	  margin: 0 8px;
-	}
 	.height {
 	  height: 40px;
-	}
-	.nav-list-title{
-	  display: none;
 	}
 	.nav-social-item {
 	  font-size: 32px;
@@ -558,6 +549,20 @@
 	  margin-bottom: 48px;
 	}
 	/*about me*/
+	/* works */
+	.works-contain {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.orenosauna {
+		margin-top: 20px;
+	}
+	.works-title {
+		text-align: center;
+		margin-bottom: 8px;
+		font-size: 24px;
+	}
+	/* works */
 	/*skills*/
 	.skills {
 	  display: block;
@@ -606,18 +611,26 @@
 	  z-index: 1;
 	  transition: all 0.5s;
 	}
-	nav .nav-list-item{
-	  font-size: 16px;
-	  list-style: none;
-	  display: inline-block;
-	  margin: 0 8px;
-	}
 	nav .nav-icon{
 	  display: none
 	}
 	.height {
 	  height: 40px;
 	}
+	/* works */
+	.works-contain {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.orenosauna {
+		margin-top: 20px;
+	}
+	.works-title {
+		text-align: center;
+		margin-bottom: 8px;
+		font-size: 20px;
+	}
+	/* works */
 	.nav-social-item {
 	  font-size: 32px;
 	  list-style: none;
@@ -739,15 +752,6 @@
 	  -webkit-transform : translate(-50%,-50%);
 	  transform : translate(-50%,-50%);
 	}
-	nav .nav-list-item{
-	  font-size: 20px;
-	  list-style: none;
-	  display: inline-block;
-	  margin: 0 8px;
-	}
-	.nav-list-title{
-	  display: none;
-	}
 	.nav-social-item {
 	  font-size: 32px;
 	  list-style: none;
@@ -789,6 +793,20 @@
 	  margin : 0 auto;
 	}
 	/*profile*/
+	/* works */
+	.works-contain {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.orenosauna {
+		margin-top: 20px;
+	}
+	.works-title {
+		text-align: center;
+		margin-bottom: 8px;
+		font-size: 20px;
+	}
+	/* works */
 	/*about_me*/
 	.about_me {
 	  display: block;

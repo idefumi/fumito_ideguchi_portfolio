@@ -25,6 +25,7 @@ $(function(){
 		return false;
 	});
 });
+
 // //background-image変更
 // $(function(){
 // 	var $win = $(window),
